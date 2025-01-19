@@ -19,5 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('', include('flow.urls')),
+    path("unicorn/", include("django_unicorn.urls")),
     path('admin/', admin.site.urls),
 ]
